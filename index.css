@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header h1 {
+  margin: 0;
+}
+.section {
+  margin-bottom: 20px;
+}
+.section-title {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.section-content {
+  padding: 20px;
+}
+.job {
+  margin-bottom: 10px;
+}
+.job-title {
+  font-weight: bold;
+}
+.job-company {
+  font-style: italic;
+}
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+.skills-list li {
+  margin-bottom: 5px;
+}
+@media print {
+  body {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: 0;
+    padding: 20mm; /* Adjust padding for print */
+    background-color: #ffffff; /* White background for printing */
+    color: #000000; /* Black text for printing */
+  }
+  .container {
+    width: auto; /* Adjust container width for printing */
+    padding: 0; /* Reduce padding for print */
+    background: none; /* No background for printing */
+  }
+  .header,
+  .section-title,
+  .section-content,
+  .job,
+  .skills-list {
+    page-break-inside: avoid; /* Avoid breaking elements across pages */
+  }
+  .header {
+    margin-top: 0; /* Adjust header margin for print */
+  }
+  .section-title {
+    font-size: 18px; /* Adjust section title font size for print */
+  }
+  .section-content,
+  .job,
+  .skills-list li {
+    font-size: 14px; /* Adjust content font size for print */
+  }
+}
